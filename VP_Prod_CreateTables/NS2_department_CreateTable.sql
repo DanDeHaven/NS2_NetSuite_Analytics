@@ -17,7 +17,7 @@ CREATE TABLE Department
 		lastmodifieddate DATETIME2,
 		[name] NVARCHAR(60),
 		parent BIGINT,
-		subsidiary NVARCHAR(4000),
+		subsidiary NVARCHAR(4000)
 	)
 
 INSERT INTO Department

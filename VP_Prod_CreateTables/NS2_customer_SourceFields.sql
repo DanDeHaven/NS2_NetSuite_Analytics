@@ -148,8 +148,5 @@ WHERE
 'weblead'
 
 		)
-		--)
-	--		AND
-	--	COLUMN_NAME NOT IN
-	--				(SELECT Field FROM #temp))
---DROP TABLE #temp;
+	AND COLUMN_NAME NOT IN
+		(SELECT Field FROM #temp)

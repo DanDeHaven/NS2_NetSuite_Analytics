@@ -5,10 +5,10 @@
 USE NS2_VP_Prod_Stage
 GO
 
-	IF Object_id('customer') > 0
-		DROP TABLE customer
+	IF Object_id('Customer') > 0
+		DROP TABLE Customer
 
-CREATE TABLE customer
+CREATE TABLE Customer
 	(
 		companyname NVARCHAR(83),
 		currency BIGINT,
@@ -45,7 +45,7 @@ CREATE TABLE customer
 
 	)
 
-INSERT INTO customer
+INSERT INTO Customer
 
 SELECT
 	companyname,
